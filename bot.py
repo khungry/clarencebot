@@ -35,7 +35,8 @@ compliments = ["Y- You're really sweet.",
 'I love you *beary* much. \nhttps://imgur.com/ux97dTB',
 'If you were a fruit you would be a fine-apple \nhttps://imgur.com/RxfoRAR',
 'I have as much love for you as Luc has for Xolia.',
-'You are wonderful, just believe in yourself.'
+'You are wonderful, just believe in yourself.',
+'If it looks like I don\'t like you, it\'s only because I\'m mad at myself for not loving you enough.'
 ]
 
 @bot.event
