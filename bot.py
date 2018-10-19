@@ -34,6 +34,8 @@ compliments = ["Y- You're really sweet.",
 ':dizzy: You leave me *star*struck :dizzy:',
 'I love you *beary* much. \nhttps://imgur.com/ux97dTB',
 'If you were a fruit you would be a fine-apple \nhttps://imgur.com/RxfoRAR',
+'I have as much love for you as Luc has for Xolia.',
+'You are wonderful, just believe in yourself.'
 ]
 
 @bot.event
@@ -45,6 +47,22 @@ async def on_ready():
 @bot.command()
 async def ping():
     await bot.say('pong!')
+
+@bot.command()
+async def rps(item):
+    if (item == 'rock' or item == 'paper' or item == 'scissors'):
+        rpsChoices = ['rock', 'paper', 'scissors']
+        botChoice = random.choice(rpsChoices)
+        if item == rock:
+            if botChoice == 'rock':
+                bot.say('I chose rock. It\'s a tie!')
+            elif botChoice == 'paper':
+                bot.say('I chose paper. Paper beats rock. I win!')
+            elif botChoice == 'scissors':
+                bot.say('I chose scissors. Rock beats scissors. You win!')
+    else:
+        bot.say('That is not a valid choice.')
+            
 
 @bot.command(pass_context=True)
 async def say(ctx, *, args):
