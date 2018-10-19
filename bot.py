@@ -48,6 +48,8 @@ async def on_ready():
 async def ping():
     await bot.say('pong!')
 
+    
+#not 100% done
 @bot.command()
 async def rps(item):
     if (item == 'rock' or item == 'paper' or item == 'scissors'):
