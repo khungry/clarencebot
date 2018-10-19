@@ -48,23 +48,39 @@ async def on_ready():
 async def ping():
     await bot.say('pong!')
 
-    
-#not 100% done
 @bot.command()
 async def rps(item):
+    item = item.lower()
     if (item == 'rock' or item == 'paper' or item == 'scissors'):
         rpsChoices = ['rock', 'paper', 'scissors']
         botChoice = random.choice(rpsChoices)
-        if item == rock:
+        #rock
+        if item == 'rock':
             if botChoice == 'rock':
                 bot.say('I chose rock. It\'s a tie!')
             elif botChoice == 'paper':
                 bot.say('I chose paper. Paper beats rock. I win!')
             elif botChoice == 'scissors':
                 bot.say('I chose scissors. Rock beats scissors. You win!')
+        #paper
+        elif item == 'paper':
+            if botChoice == 'rock':
+                bot.say('I chose rock. Paper beats rock. You win!')
+            elif botChoice == 'paper':
+                bot.say('I chose paper. It\'s a tie!')
+            elif botChoice == 'scissors':
+                bot.say('I chose scissors. Scissors beats paper. I win!')
+        #scissors
+        elif item == 'scissors':
+            if botChoice == 'rock':
+                bot.say('I chose rock. Rock beats scissors. I win!')
+            elif botChoice == 'paper':
+                bot.say('I chose paper. Scissors beats paper. You win!')
+            elif botChoice == 'scissors':
+                bot.say('I chose scissors. It\'s a tie!')
     else:
         bot.say('That is not a valid choice.')
-            
+
 
 @bot.command(pass_context=True)
 async def say(ctx, *, args):
