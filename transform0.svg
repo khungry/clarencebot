@@ -5,7 +5,7 @@
       <g transform="scale(1.5, 1.5)">
         <path d="m0.5 14.5 L 0.5 10.5 A 4 4 90 0 1 4.5 6.5 L 8.5 6.5 L 13.5 0.5 L 18.5 6.5 L 27.5 6.5 L 87.5 6.5 L 91.5 6.5 A 4 4 90 0 1 95.5 10.5 L 95.5 14.5 L 95.5 18.5 L 95.5 22.5 A 4 4 90 0 1 91.5 26.5 L 87.5 26.5 L 27.5 26.5 L 26.5 26.5 L 26.5 28.5 L 18.5 28.5 L 18.5 26.5 L 17.5 26.5 L 13.5 26.5 A 5 5 90 0 0 8.5 31.5 L 8.5 35.5 L 8.5 39.5 L 8.5 375.5 L 8.5 379.5 A 5 5 90 0 0 13.5 384.5 L 17.5 384.5 L 17.5 386.5 L 27.5 386.5 L 27.5 384.5 L 35.5 384.5 L 35.5 390.5 L 35.5 396.5 L 35.5 400.5 A 4 4 90 0 1 31.5 404.5 L 27.5 404.5 L 18.5 404.5 L 13.5 410.5 L 8.5 404.5 L 4.5 404.5 A 4 4 90 0 1 0.5 400.5 L 0.5 396.5 z" style="fill:#DAA926;fill-opacity:1;stroke:#DAAF30;stroke-width:1;stroke-linecap:round;stroke-opacity:1;" />
         <text style="font-size:10px;fill:#282828;font-family:sans-serif;text-anchor:start">
-          <tspan x="20" y="22">start</tspan>
+          <tspan x="0" y="0">start</tspan>
         </text>
       </g>
     </g>
