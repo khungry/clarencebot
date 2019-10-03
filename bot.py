@@ -88,6 +88,11 @@ async def say(ctx, *, args):
     await bot.say(args)
     await bot.delete_message(ctx.message)
 
+@bot.command(pass_context=True)
+async def uwu(ctx, *, args):
+	await bot.delete_message(ctx.message)
+	await bot.say(args + ' uwu')
+
 @bot.command()
 async def snap():
     await bot.say('https://imgur.com/GbgE5OE')
