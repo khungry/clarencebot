@@ -7,6 +7,7 @@ import time
 
 bot = commands.Bot(command_prefix = ('!', '.'), case_insensitive = True)
 TOKEN = 'token'
+game = discord.Game(name = 'game name')
 compliments = ["Y- You're really sweet.",
 "You're doing great!",
 "11/10 you're rocking it!",
@@ -41,7 +42,7 @@ compliments = ["Y- You're really sweet.",
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game = discord.Game(name = 'with Ren'))
+    await bot.change_presence(activity = game)
     print("Bot is online and connected to Discord")
 
 #start of commands
